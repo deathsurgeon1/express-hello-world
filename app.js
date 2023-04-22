@@ -4,6 +4,8 @@ const port = process.env.PORT || 3001;
 
 app.get("/", (req, res) => res.type('html').send(html));
 
+app.post("/send-email", (req, res) => res.send('success'));
+
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
 
