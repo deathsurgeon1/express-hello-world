@@ -1,8 +1,10 @@
 const express = require('express');
 const nodemailer = require('nodemailer');
+var cors = require('cors')
 
 const app = express();
 app.use(express.json());
+app.use(cors());
 
 // Set up a route for sending emails
 app.post('/send-email', (req, res) => {
