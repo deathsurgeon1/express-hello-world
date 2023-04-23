@@ -16,10 +16,10 @@ app.post('/send-email', (req, res) => {
         }
     });
     const mailOptions = {
-      from: req.body.from,
-      to: req.body.to,
-      subject: req.body.subject,
-      text: req.body.title
+      from: "technologies.moweb@gmail.com",
+      to: "hello@mowebtechnologies.com",
+      subject: req.body.title,
+      text: req.body.subject
     };
     client.sendMail(mailOptions, (error, info) => {
         if (error) {
