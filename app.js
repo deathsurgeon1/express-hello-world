@@ -17,7 +17,7 @@ app.post('/send-email', (req, res) => {
     });
     const mailOptions = {
       from: "technologies.moweb@gmail.com",
-      to: "hello@mowebtechnologies.com",
+      to: "siddc0104@gmail.com",
       subject: req.body.title,
       text: req.body.subject
     };
